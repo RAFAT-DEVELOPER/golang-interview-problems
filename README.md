@@ -22,7 +22,7 @@ To get the most out of this repository:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/golang-interview-problems.git
+   git clone https://github.com/RAFAT-DEVELOPER/golang-interview-problems.git
    ```
 
 1. Browse the problems directory to find a list of coding challenges. Each challenge is organized in its own subdirectory.
