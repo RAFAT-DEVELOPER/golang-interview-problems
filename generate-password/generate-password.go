@@ -35,10 +35,14 @@ func generateRandomPassword(length int) (string, error) {
 
 func main() {
 	passwordLength := defaultPasswordLength // Change the desired password length here
-	randomPassword, err := generateRandomPassword(passwordLength)
-	if err != nil {
-		fmt.Println("Error:", err)
-		return
+	limit := 5
+	for i := 0; i < limit; i++ {
+		randomPassword, err := generateRandomPassword(passwordLength)
+		if err != nil {
+			fmt.Println("Error:", err)
+			return
+		}
+		fmt.Println(i+1, ". Random Password ", randomPassword)
 	}
-	fmt.Println("Random Password:", randomPassword)
+
 }
